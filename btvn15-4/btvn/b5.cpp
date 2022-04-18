@@ -15,14 +15,15 @@ int main()
 	}
 	for(int i=0;i<n-1;i++)
 	{
-		for(int j=i+1;j<n-i-1 && a[j]%2!=0 && a[i]%2!=0 ;j++)
+		for(int j=0;j<i-1;j++)
 		{
-			
+			if(a[j]%2!=0)
+			{
 				
 				int temp = a[j]; 
 				a[j] = a[j+1]  ; 
 				a[j+1] = temp ;
-			
+			}
 		}
 	}
 	for(int i=0;i<n;i++)
