@@ -16,10 +16,14 @@ int main()
 		{
 			printf("%d la so le cuoi cung cua mang",a[i]);
 			break;
-		}
-	}
+		}else{
+		
+	
 		if(a[i]%2==0)
-		{
+			{
 			printf("khong co so le trong mang");
-		}
+			break; 
+			}
+		} 
+	}
 }
